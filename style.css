@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Notable&display=swap');
+
+.hero {
+    --bulma-hero-body-padding-tablet: 1.5rem 3rem;
+}
+
 html {
     overflow: hidden;
+}
+
+.scroll-container {
+    /* max-width: 100vh; */
+    max-height: 100vh;
+    width: 100%;
+    /* this displays creates a scrollbar on the element only when the content exceeds the max height of the element */
+    overflow-y: auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
 }
